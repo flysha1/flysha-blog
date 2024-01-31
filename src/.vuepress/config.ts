@@ -2,11 +2,11 @@ import { defineUserConfig } from "vuepress";
 import theme from "./theme.js";
 
 export default defineUserConfig({
-  base: "/",
+  base: "/flysha-blog/",
 
   lang: "zh-CN",
-  title: "FLysha's blog",
-  description: "FLysha的博客",
+  title: "Flysha",
+  description: "Flysha's blog",
   theme,
 
   // 和 PWA 一起启用
