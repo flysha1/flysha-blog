@@ -4,7 +4,7 @@ import sidebar from "./sidebar.js";
 import { MR_HOPE_AVATAR } from "./logo.js";
 
 export default hopeTheme({
-  hostname: " https://flysha1.github.io/blog",
+  // hostname: " https://flysha1.github.io",
 
   author: {
     name: "Flysha",
@@ -69,11 +69,11 @@ export default hopeTheme({
   },
 
   // 加密配置
-  encrypt: {
-    config: {
-      "/demo/encrypt.html": ["1234"],
-    },
-  },
+  // encrypt: {
+  //   config: {
+  //     "/demo/encrypt.html": ["1234"],
+  //   },
+  // },
 
   // 多语言配置
   metaLocales: {
@@ -86,14 +86,12 @@ export default hopeTheme({
   // 在这里配置主题提供的插件
   plugins: {
     blog: true,
-
     // 在启用之前需要安装 @waline/client
     // 警告: 这是一个仅供演示的测试服务器，在生产环境中请自行部署并使用自己的服务器！
     // comment: {
     //   provider: "Waline",
     //   serverURL: "https://waline-comment.vuejs.press",
     // },
-
     components: {
       components: ["Badge", "VPCard"],
     },
@@ -104,7 +102,7 @@ export default hopeTheme({
       attrs: true,
       codetabs: true,
       component: true,
-      demo: true,
+      demo: false,
       figure: true,
       imgLazyload: true,
       imgSize: true,
