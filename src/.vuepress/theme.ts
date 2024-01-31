@@ -4,18 +4,18 @@ import sidebar from "./sidebar.js";
 import { MR_HOPE_AVATAR } from "./logo.js";
 
 export default hopeTheme({
-  hostname: "https://mister-hope.github.io",
+  hostname: " https://flysha1.github.io/blog",
 
   author: {
-    name: "Mr.Hope",
-    url: "https://mister-hope.com",
+    name: "Flysha",
+    url: "https://github.com/flysha1",
   },
 
   iconAssets: "fontawesome-with-brands",
 
   logo: "/logo.svg",
 
-  repo: "vuepress-theme-hope/vuepress-theme-hope",
+  repo: "https://github.com/flysha1",
 
   docsDir: "src",
 
@@ -25,7 +25,7 @@ export default hopeTheme({
   sidebar,
 
   // 页脚
-  footer: "默认页脚",
+  footer: "",
   displayFooter: true,
 
   // 博客相关
@@ -79,7 +79,7 @@ export default hopeTheme({
   metaLocales: {
     editLink: "在 GitHub 上编辑此页",
   },
-
+  editLink: false,
   // 如果想要实时查看任何改变，启用它。注: 这对更新性能有很大负面影响
   // hotReload: true,
 
