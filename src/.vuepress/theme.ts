@@ -10,8 +10,9 @@ export default hopeTheme({
     name: "Flysha",
     url: "https://github.com/flysha1",
   },
+  // iconAssets: "fontawesome-with-brands",
 
-  iconAssets: "fontawesome-with-brands",
+  iconAssets: "https://at.alicdn.com/t/c/font_4429412_y6x6xldvhrr.css",
 
   logo: "/logo.svg",
 
