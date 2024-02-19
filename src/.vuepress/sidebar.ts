@@ -20,6 +20,12 @@ export default sidebar({
           children: "structure",
           collapsible: true,
         },
+        {
+          text: "js",
+          prefix: "js/",
+          children: "structure",
+          collapsible: true,
+        },
       ],
       collapsible: true,
     },
