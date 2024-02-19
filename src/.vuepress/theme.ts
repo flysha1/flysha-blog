@@ -103,7 +103,7 @@ export default hopeTheme({
       attrs: true,
       codetabs: true,
       component: true,
-      demo: false,
+      demo: true,
       figure: true,
       imgLazyload: true,
       imgSize: true,
