@@ -6,8 +6,14 @@ export default sidebar({
     {
       text: "前端技术",
       icon: "front",
-      prefix: "front/",
+      prefix: "前端技术/",
       children: [
+        {
+          text: "浏览器",
+          prefix: "浏览器/",
+          children: "structure",
+          collapsible: true,
+        },
         {
           text: "html",
           prefix: "html/",
@@ -28,8 +34,14 @@ export default sidebar({
         },
         {
           text: "面试相关",
-          prefix: "interview/",
+          prefix: "面试相关/",
           children: [
+            {
+              text: "浏览器",
+              prefix: "浏览器/",
+              children: "structure",
+              collapsible: true,
+            },
             {
               text: "html",
               prefix: "html/",
@@ -48,6 +60,18 @@ export default sidebar({
               children: "structure",
               collapsible: true,
             },
+            {
+              text: "vue",
+              prefix: "vue/",
+              children: "structure",
+              collapsible: true,
+            },
+            {
+              text: "算法",
+              prefix: "算法/",
+              children: "structure",
+              collapsible: true,
+            },
           ],
           collapsible: true,
         },
@@ -57,7 +81,7 @@ export default sidebar({
     {
       text: "后端技术",
       icon: "server",
-      prefix: "back/",
+      prefix: "后端技术/",
       collapsible: true,
       children: [
         {
@@ -66,12 +90,12 @@ export default sidebar({
           children: "structure",
           collapsible: true,
         },
-      ]
+      ],
     },
     {
       text: "开发工具",
       icon: "tool",
-      prefix: "devTools/",
+      prefix: "开发工具/",
       collapsible: true,
       children: [
         {
@@ -80,7 +104,7 @@ export default sidebar({
           children: "structure",
           collapsible: true,
         },
-      ]
+      ],
     },
     "intro",
   ],

@@ -5,7 +5,7 @@ export default navbar([
   {
     text: "前端技术",
     icon: "pigeonhole",
-    prefix: "/front/",
+    prefix: "/前端技术/",
     children: [
       {
         text: "html",
