@@ -4,6 +4,7 @@ import sidebar from "./sidebar.js";
 import { MR_HOPE_AVATAR } from "./logo.js";
 
 export default hopeTheme({
+  lastUpdated:false,
   // hostname: " https://flysha1.github.io",
 
   author: {
@@ -99,6 +100,7 @@ export default hopeTheme({
 
     // 此处开启了很多功能用于演示，你应仅保留用到的功能。
     mdEnhance: {
+      alert:true,
       align: true,
       attrs: true,
       codetabs: true,
@@ -136,7 +138,7 @@ export default hopeTheme({
       // echarts: true,
 
       // 在启用之前安装 flowchart.ts
-      // flowchart: true,
+      flowchart: true,
 
       // gfm requires mathjax-full to provide tex support
       // gfm: true,
@@ -160,11 +162,12 @@ export default hopeTheme({
       // },
 
       // 在启用之前安装 @vue/repl
-      // vuePlayground: true,
+      vuePlayground: true,
 
       // install sandpack-vue3 before enabling it
       // sandpack: true,
     },
+
 
     // 如果你需要 PWA。安装 vuepress-plugin-pwa2 并取消下方注释
     // pwa: {
