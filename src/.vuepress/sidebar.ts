@@ -29,7 +29,53 @@ export default sidebar({
         {
           text: "JavaScript",
           prefix: "JavaScript/",
-          children: "structure",
+          children: [
+            {
+              text: "基本语法",
+              prefix: "基本语法/",
+              children: [
+                {
+                  text: "词法语法",
+                  prefix: "词法语法/",
+                  children: "structure",
+                  collapsible: false,
+                },
+              ],
+              collapsible: true,
+            },
+            {
+              text: "内置对象",
+              prefix: "内置对象/",
+              children: [
+                {
+                  text: "全局对象-值属性",
+                  prefix: "全局对象-值属性/",
+                  children: "structure",
+                  collapsible: false,
+                },
+              ],
+              collapsible: true,
+            },
+            {
+              text: "核心模块",
+              prefix: "核心模块/",
+              children: [
+                {
+                  text: "编译阶段",
+                  prefix: "编译阶段/",
+                  children: "structure",
+                  collapsible: false,
+                },
+                {
+                  text: "执行阶段",
+                  prefix: "执行阶段/",
+                  children: "structure",
+                  collapsible: false,
+                },
+              ],
+              collapsible: true,
+            },
+          ],
           collapsible: true,
         },
         {

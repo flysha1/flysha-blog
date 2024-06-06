@@ -23,7 +23,11 @@ export default navbar([
         text: "JavaScript",
         icon: "js",
         prefix: "JavaScript/",
-        children: [{ text: "JavaScript 基础", link: "1" }],
+        children: [
+          { text: "基本语法", link: "基本语法/词法语法/1" },
+          { text: "内置对象", link: "内置对象/全局对象-值属性/1" },
+          { text: "核心模块", link: "核心模块/编译阶段/1" },
+        ],
       },
     ],
   },
