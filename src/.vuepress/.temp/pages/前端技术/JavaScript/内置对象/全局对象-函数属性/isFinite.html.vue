@@ -1,0 +1,37 @@
+<template><div><h1 id="isfinite" tabindex="-1"><a class="header-anchor" href="#isfinite"><span>isFinite</span></a></h1>
+<p><code v-pre>isFinite()</code> 函数用于判断指定数字是否是有限值。如果指定的数字为 <code v-pre>NaN</code>、<code v-pre>Infinity</code>、<code v-pre>-Infinity</code>，则返回 <code v-pre>false</code>，其他数字均返回 <code v-pre>true</code>。</p>
+<p>该函数属于 <code v-pre>Global</code> 对象，所有主流浏览器均支持该函数。</p>
+<h2 id="语法" tabindex="-1"><a class="header-anchor" href="#语法"><span>语法</span></a></h2>
+<div class="language-js line-numbers-mode" data-highlighter="shiki" data-ext="js" data-title="js" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre v-pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">isFinite</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">(</span><span style="--shiki-light:#383A42;--shiki-dark:#E06C75">number</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">);</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>如果参数 <code v-pre>number</code> 不是 <code v-pre>Number</code> 类型（如字符串、函数等），也返回 <code v-pre>false</code>。</p>
+<p><code v-pre>isFinite()</code> 函数的返回值是 <code v-pre>Boolean</code> 类型。</p>
+<ul>
+<li>当指定的数字为 <code v-pre>NaN</code>、<code v-pre>正无穷</code>、<code v-pre>负无穷</code>时，返回 false；</li>
+<li>除上述三种 <code v-pre>Number</code> 类型外的数字均返回 <code v-pre>true</code>。</li>
+</ul>
+<h2 id="示例" tabindex="-1"><a class="header-anchor" href="#示例"><span>示例</span></a></h2>
+<div class="language-js line-numbers-mode" data-highlighter="shiki" data-ext="js" data-title="js" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre v-pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">// false situation</span></span>
+<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">isFinite</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">(</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66">NaN</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">);</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">// false</span></span>
+<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">isFinite</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">(</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66">Infinity</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">);</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">// false</span></span>
+<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">isFinite</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">(</span><span style="--shiki-light:#0184BC;--shiki-dark:#56B6C2">-</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66">Infinity</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">);</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">//  alse</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">// true situaton</span></span>
+<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">isFinite</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">(</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66">0</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">);</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">// true</span></span>
+<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">isFinite</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">(</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66">2e64</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">);</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">// true</span></span>
+<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">isFinite</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">(</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">'0'</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">);</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">// true</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">// extraordinary</span></span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#E5C07B">Number</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">isFinite</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">(</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66">null</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">);</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">// false</span></span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#E5C07B">Number</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">isFinite</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">(</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">'0'</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">);</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">// false</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>更推荐使用<code v-pre>Number.isFinite()</code>，因为 <code v-pre>Number.isFinite()</code> 不会强制将一个非数值的参数转换成数值，这就意味着，只有数值类型的值，且是有限值，才返回 <code v-pre>true</code>。</p>
+</div></template>
+
+

@@ -1,0 +1,16 @@
+<template><div><h1 id="globalthis" tabindex="-1"><a class="header-anchor" href="#globalthis"><span>globalThis</span></a></h1>
+<p>全局属性 <code v-pre>globalThis</code> 包含全局的 <code v-pre>this</code> 值，类似于全局对象（global object）。</p>
+<h2 id="语法" tabindex="-1"><a class="header-anchor" href="#语法"><span>语法</span></a></h2>
+<div class="language-js line-numbers-mode" data-highlighter="shiki" data-ext="js" data-title="js" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre v-pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#E06C75">globalThis</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">;</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><h2 id="说明" tabindex="-1"><a class="header-anchor" href="#说明"><span>说明</span></a></h2>
+<p>在以前，从不同的 JavaScript 环境中获取全局对象需要不同的语句。在 Web 中，可以通过 <code v-pre>window</code>、<code v-pre>self</code> 或者 <code v-pre>frames</code> 取到全局对象，但是在 Web Workers 中，只有 <code v-pre>self</code> 可以。在 Node.js 中，它们都无法获取，必须使用 <code v-pre>global</code>。</p>
+<p>在松散模式下，可以在函数中返回 this 来获取全局对象，但是在严格模式和模块环境下，<code v-pre>this</code> 会返回 <code v-pre>undefined</code>。你也可以使用 <code v-pre>Function('return this')()</code>，但那些禁用 <code v-pre>eval()</code> 的环境，如在浏览器中的 CSP，不允许这样使用 <code v-pre>Function</code>。</p>
+<p><code v-pre>globalThis</code> 提供了一个标准的方式来获取不同环境下的全局 <code v-pre>this</code> 对象（也就是全局对象自身）。不像 <code v-pre>window</code> 或者 <code v-pre>self</code> 这些属性，它确保可以在有无窗口的各种环境下正常工作。所以，你可以安心的使用 globalThis，不必担心它的运行环境。为便于记忆，你只需要记住，全局作用域中的 <code v-pre>this</code> 就是 <code v-pre>globalThis</code></p>
+<h2 id="示例" tabindex="-1"><a class="header-anchor" href="#示例"><span>示例</span></a></h2>
+<p>判断当前环境是否有 <code v-pre>setTimeout</code> 方法</p>
+<div class="language-js line-numbers-mode" data-highlighter="shiki" data-ext="js" data-title="js" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre v-pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD">if</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> (</span><span style="--shiki-light:#0184BC;--shiki-dark:#C678DD">typeof</span><span style="--shiki-light:#383A42;--shiki-dark:#E5C07B"> globalThis</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">setTimeout</span><span style="--shiki-light:#0184BC;--shiki-dark:#56B6C2"> !==</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> "function"</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">) {</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">  //  此环境中没有 setTimeout 方法！</span></span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">}</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></div></template>
+
+

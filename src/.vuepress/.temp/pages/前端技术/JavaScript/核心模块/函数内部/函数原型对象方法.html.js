@@ -1,0 +1,16 @@
+import comp from "D:/code/vuepress/flysha-blog/src/.vuepress/.temp/pages/前端技术/JavaScript/核心模块/函数内部/函数原型对象方法.html.vue"
+const data = JSON.parse("{\"path\":\"/%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF/JavaScript/%E6%A0%B8%E5%BF%83%E6%A8%A1%E5%9D%97/%E5%87%BD%E6%95%B0%E5%86%85%E9%83%A8/%E5%87%BD%E6%95%B0%E5%8E%9F%E5%9E%8B%E5%AF%B9%E8%B1%A1%E6%96%B9%E6%B3%95.html\",\"title\":\"函数原型对象方法\",\"lang\":\"zh-CN\",\"frontmatter\":{\"order\":2,\"date\":\"2018-01-01T00:00:00.000Z\",\"category\":[\"前端技术\"],\"tag\":[\"JavaScript\"],\"gitInclude\":[]},\"headers\":[{\"level\":2,\"title\":\"apply\",\"slug\":\"apply\",\"link\":\"#apply\",\"children\":[{\"level\":3,\"title\":\"语法\",\"slug\":\"语法\",\"link\":\"#语法\",\"children\":[]},{\"level\":3,\"title\":\"参数\",\"slug\":\"参数\",\"link\":\"#参数\",\"children\":[]},{\"level\":3,\"title\":\"示例\",\"slug\":\"示例\",\"link\":\"#示例\",\"children\":[]}]},{\"level\":2,\"title\":\"call\",\"slug\":\"call\",\"link\":\"#call\",\"children\":[{\"level\":3,\"title\":\"语法\",\"slug\":\"语法-1\",\"link\":\"#语法-1\",\"children\":[]},{\"level\":3,\"title\":\"参数\",\"slug\":\"参数-1\",\"link\":\"#参数-1\",\"children\":[]},{\"level\":3,\"title\":\"示例\",\"slug\":\"示例-1\",\"link\":\"#示例-1\",\"children\":[]}]},{\"level\":2,\"title\":\"bind\",\"slug\":\"bind\",\"link\":\"#bind\",\"children\":[{\"level\":3,\"title\":\"语法\",\"slug\":\"语法-2\",\"link\":\"#语法-2\",\"children\":[]},{\"level\":3,\"title\":\"参数\",\"slug\":\"参数-2\",\"link\":\"#参数-2\",\"children\":[]},{\"level\":3,\"title\":\"描述\",\"slug\":\"描述\",\"link\":\"#描述\",\"children\":[]},{\"level\":3,\"title\":\"示例\",\"slug\":\"示例-2\",\"link\":\"#示例-2\",\"children\":[]}]}],\"readingTime\":{\"minutes\":4.5,\"words\":1350},\"filePathRelative\":\"前端技术/JavaScript/核心模块/函数内部/函数原型对象方法.md\",\"localizedDate\":\"2018年1月1日\",\"excerpt\":\"\\n<h2>apply</h2>\\n<p><code>apply()</code> 函数用于调用当前函数，并可同时使用指定对象作为本次函数执行时函数内部的 this 指针引用。</p>\\n<h3>语法</h3>\\n<div class=\\\"language-js line-numbers-mode\\\" data-highlighter=\\\"shiki\\\" data-ext=\\\"js\\\" data-title=\\\"js\\\" style=\\\"--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34\\\"><pre class=\\\"shiki shiki-themes one-light one-dark-pro vp-code\\\"><code><span class=\\\"line\\\"><span style=\\\"--shiki-light:#383A42;--shiki-dark:#E5C07B\\\">func</span><span style=\\\"--shiki-light:#383A42;--shiki-dark:#ABB2BF\\\">.</span><span style=\\\"--shiki-light:#4078F2;--shiki-dark:#61AFEF\\\">apply</span><span style=\\\"--shiki-light:#383A42;--shiki-dark:#ABB2BF\\\">( [</span><span style=\\\"--shiki-light:#383A42;--shiki-dark:#E06C75\\\">thisArg</span><span style=\\\"--shiki-light:#383A42;--shiki-dark:#ABB2BF\\\"> [, </span><span style=\\\"--shiki-light:#383A42;--shiki-dark:#E06C75\\\">argsArray</span><span style=\\\"--shiki-light:#383A42;--shiki-dark:#ABB2BF\\\">]])</span></span></code></pre>\\n<div class=\\\"line-numbers\\\" aria-hidden=\\\"true\\\" style=\\\"counter-reset:line-number 0\\\"><div class=\\\"line-number\\\"></div></div></div>\"}")
+export { comp, data }
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}
