@@ -17,7 +17,7 @@ export default navbar([
         text: "CSS",
         icon: "css",
         prefix: "css/",
-        children: [{ text: "CSS 基础", link: "1" }],
+        children: [{ text: "CSS 基础", link: "1.CSS简述" }],
       },
       {
         text: "JavaScript",
